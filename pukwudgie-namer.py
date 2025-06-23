@@ -3,8 +3,8 @@ import random
 test = True
 
 pukwudgie_initials = ["T", "T", "J", "J", "N", "K", "F", "D", "Ch", "M", "G", "V"]
-pukwudgie_medials = ["t", "j", "n", "n", "ff", "ff", "ck", "ck", "d", "ch", "m", "v", "g"]
-pukwudgie_vowels = ["a", "o", "i", "e", "a", "o", "i", "e", "oo", "ee"]
+pukwudgie_medials = ["t", "dj", "nn", "nn", "ff", "ff", "ck", "ck", "d", "ch", "m", "v", "g"]
+pukwudgie_vowels = ["a", "o", "i", "e", "a", "o", "i", "e", "a", "o", "i", "e", "oo", "ee"]
 pukwudgie_finals = ["r", "r", "l", "m", "n"]
 
 ## function definitions
