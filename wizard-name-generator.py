@@ -227,7 +227,7 @@ def latin_name(gender):
     if rand == 1:
         lname = random.choice(lat_surnames) + " y " + random.choice(lat_surnames)
     elif rand == 2:
-        lname = random.choice(lat_surnames) + " dit " + random.choice(lat_surnames)
+        lname = random.choice(lat_surnames) + " et " + random.choice(lat_surnames)
     elif rand == 3:
         lname = random.choice(lat_surnames) + " " + random.choice(lat_surnames)
     else:
@@ -245,7 +245,7 @@ def mixed_name(gender):
     if rand == 1:
         lname = random.choice(mix_surnames) + " y " + random.choice(mix_surnames)
     elif rand == 2:
-        lname = random.choice(mix_surnames) + " dit " + random.choice(mix_surnames)
+        lname = random.choice(mix_surnames) + " et " + random.choice(mix_surnames)
     elif rand == 3:
         lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
     elif rand == 4:
