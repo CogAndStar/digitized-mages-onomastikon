@@ -27,7 +27,18 @@ male_sax_names = ["Jay", "Lewis", "Townsend", "Newton", "Harvey", "Pollux",
     "Godfrey", "Godfried", "Gottfrid", "Erwin", "Charon", "Karon", "Deimos",
     "Phobos", "Enceladus", "Enkelados", "Ganymede", "Ganymedes", "Mimas",
     "Oberon", "Auberon", "Titan", "Triton", "Uranus", "Ouranos", "Uranos", "Albert",
-    "Adelbert", "Albertus", "Magnus", "Jasper", "Jesper", "Columba", "Cyprian"]
+    "Adelbert", "Albertus", "Magnus", "Jasper", "Jesper", "Columba", "Cyprian",
+    "Mahershalalhasbaz", "Notwithstanding", "Maybe", "Joseph", "Samuel", "Josiah",
+    "Moses", "Adam", "Solomon", "Hezekiah", "Amos", "Ephraim", "Isaac", "Jonas",
+    "Be-Courteous", "Safely-on-High", "Fight-the-Good-Fight-of-Faith", "Small-Hope",
+    "Humiliation", "Love", "Wrestling", "Mortify", "Kill-Sin", "Credence",
+    "Fly-Fornication", "Posthumus", "Vashni", "Tellno", "Increase", "Onesiphorus",
+    "Zaphnaphpaaneh", "Epaphroditus", "Michalaliel", "Lamentations", "Pharaoh",
+    "Judas-Not-Iscariot", "Tribulation", "Zeal-of-the-Land", "Merciful",
+    "Steadfast", "Much-Mercy", "Fear-Not", "Sorry-For-Sin", "No-Merit", "Accepted",
+    "Thankful", "More-Fruit", "Faint-Not", "Purify", "Safe-Deliverance",
+    "What-God-Will", "Humanity", "Faithful", "Anger", "Wroth", "Unfeigned", "Miracle",
+    "Job-Raked-Out-of-the-Ashes", "Ashes", "Called"]
 female_sax_names = ["Letitia", "Sienna", "Camellia", "Johanna", "Henrietta",
     "Rainier", "Charlotte", "Adelaide", "Emily", "Augusta", "Kestrel", "Beatrice",
     "Keziah", "Micaiah", "Delilah", "Louise", "Georgia", "Cornelia", "Helena",
@@ -52,7 +63,16 @@ female_sax_names = ["Letitia", "Sienna", "Camellia", "Johanna", "Henrietta",
     "Kybele", "Daphne", "Dafne", "Dione", "Diotima", "Doris", "Egeria", "Elara",
     "Elektra", "Electra", "Eunomia", "Euphrosyne", "Eufrosyne", "Europa", "Fortuna",
     "Hebe", "Himalia", "Hygieia", "Hygeia", "Io", "Iris", "Nemesis", "Pallas",
-    "Pasiphae", "Pasifae", "Psyche", "Sinope", "Columba"]
+    "Pasiphae", "Pasifae", "Psyche", "Sinope", "Columba", "Notwithstanding",
+    "Maybe", "Rebecca", "Hannah", "Deborah", "Huldah", "Abigail", "Rachel",
+    "Ruth", "Be-Courteous", "Safely-on-High", "Fight-the-Good-Fight-of-Faith",
+    "Small-Hope", "Humiliation", "Kill-Sin", "Mortify", "Fly-Fornication",
+    "Repentance", "Damaris", "Achsar", "Aphra", "Renewed", "Rejoice", "Increased",
+    "Sin-Deny", "Continent", "Joy-Again", "From-Above", "Hopeful", "Faith-My-Joy",
+    "Sense", "Humility", "Clemency", "Mercy", "Truth", "Philadelphia" "Silence",
+    "Obedience", "Virtue", "Confidence", "Victory", "Changed", "Abuse-Not",
+    "Learn-Wisdom", "Lament", "Handmaid", "My-Sake", "Remember", "Peaceable",
+    "Amity"]
 
 male_lat_names = ["Oriol", "Percillier", "Zepherin", "Severin", "Remy", "Juan",
     "Martin", "Juan Martin", "Eliseo", "Cristobal", "Tomas", "Pablo", "Orphat",
@@ -75,7 +95,14 @@ male_lat_names = ["Oriol", "Percillier", "Zepherin", "Severin", "Remy", "Juan",
     "Christophe", "Oswaldo", "Godofredo", "Caronte", "Caron", "Charon", "Deimos",
     "Fobos", "Phobos", "Encelade", "Encelado", "Ganymede", "Ganimedes", "Mimas",
     "Mimante", "Oberon", "Auberon", "Titan", "Triton", "Urano", "Ouranos", "Aubert",
-    "Alberto", "Gaspard", "Gaspar", "Colomba", "Columba", "Cyprien", "Cipriano"]
+    "Alberto", "Gaspard", "Gaspar", "Colomba", "Columba", "Cyprien", "Cipriano",
+    "Domingo", "Leo", "Leon", "Pascal", "Pascual", "Sylvestre", "Gibert",
+    "Benito", "Benedicto", "Teofilacto", "Gregorio", "Hildebrand", "Hildebrando",
+    "Honorio", "Honore", "Alexandre", "Alejandro", "Boniface", "Bonifacio",
+    "Jean-Baptiste", "Augustin", "Joseph-Marie", "Michel", "Gabriel", "Guy",
+    "Florimond", "Charles", "Isaac", "Emmanuel", "Alexandre", "Hector", "Gaston",
+    "Balthazard", "Annibal", "Alexis", "Annibal-Alexis", "Balthazard-Annibal-Alexis",
+    "Balthazard-Annibal", "Balthazard-Alexis"]
 female_lat_names = ["Jeliette", "Ariane", "Pilar", "Polaire", "Eliane", "Ana",
     "Sofia", "Ana Sofia", "Alivienne", "Ghislaine", "Ysabeau", "Elena", "Ofelia",
     "Albine", "Corentine", "Dominique", "Estienette", "Nicole", "Catherine",
@@ -98,7 +125,9 @@ female_lat_names = ["Jeliette", "Ariane", "Pilar", "Polaire", "Eliane", "Ana",
     "Electra", "Electre", "Eunomie", "Eunomia", "Euphrosyne", "Eufrosina", "Europa",
     "Fortuna", "Hebe", "Heba", "Himalia", "Hygie", "Hygee", "Higia", "Io", "Iris",
     "Nemesis", "Pallas", "Palas", "Palade", "Pasiphae", "Pasifae", "Psyche", "Psique",
-    "Sinope", "Colombe", "Columba"]
+    "Sinope", "Colombe", "Columba", "Anunciacion", "Resureccion", "Asuncion",
+    "Trinidad", "Michelle", "Gabrielle", "Gabriela", "Miguela", "Claire", "Claude",
+    "Claudette"]
 
 sax_surnames = ["Ahern", "Bottles", "Burke", "Desmond", "Garrick", "Koenig", "Roop",
     "Blair", "Wetter", "Byrnes", "Ermendinger", "Irving", "Lovejoy", "Meriwether",
@@ -160,7 +189,11 @@ lat_surnames = ["Alvarez", "du Nuit", "Castillo", "Gutierrez de la Concha",
     "Vazquez", "Canembelli", "Beaubois", "Belleau", "Boncadavre", "Deschouettes",
     "Malcorbeau", "de La Croix", "Leforgeron", "Beaufee", "Bellefils", "Bonflamme",
     "Desfoix", "Malgrange", "du Houx", "Dulieu", "Beauloup", "Bellemaitre",
-    "Bonmont", "Despyjons", "Malrue", "le Soleil", "Delabaguette", "Boulanger"]
+    "Bonmont", "Despyjons", "Malrue", "le Soleil", "Delabaguette", "Boulanger",
+    "Dugua", "de Mons", "de Biencourt", "de Pourtincourt", "de Saint-Just",
+    "Amador", "de Salazar", "de Saint-Etienne", "de La Tour", "de Razilly",
+    "de Menou", "d'Aulnay", "Denys", "Cosnier", "Le Borgne", "de Belle-Isle",
+    "Motin", "de Reux", "d'Andigne", "de Grandfontaine", "Flotte", "de la Frediere"]
 
 male_mix_names = male_sax_names + male_lat_names
 female_mix_names = female_sax_names + female_lat_names
