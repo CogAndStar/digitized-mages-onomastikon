@@ -4,7 +4,7 @@ test = True
 
 pukwudgie_initials = ["T", "J", "N", "K", "Kw", "F", "D", "Ch", "M", "G", "V"]
 pukwudgie_medials = ["t", "j", "n", "ff", "ck", "d", "ch", "m", "v", "g"]
-pukwudgie_vowels = ["a", "o", "i", "a", "e", "e", "o", "i", "ah", "oo", "ee", "oh", "eh", "ih"]
+pukwudgie_vowels = ["a", "o", "i", "a", "e", "e", "o", "i", "oo", "ee"]
 pukwudgie_finals = ["r", "l", "m", "n"]
 
 print("Welcome to the Pukwudgie Namer!")
