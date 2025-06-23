@@ -192,7 +192,7 @@ lat_surnames = ["Alvarez", "du Nuit", "Castillo", "Gutierrez de la Concha",
     "Bonmont", "Despyjons", "Malrue", "le Soleil", "Delabaguette", "Boulanger",
     "Dugua", "de Mons", "de Biencourt", "de Pourtincourt", "de Saint-Just",
     "Amador", "de Salazar", "de Saint-Etienne", "de La Tour", "de Razilly",
-    "de Menou", "d'Aulnay", "Denys", "Cosnier", "Le Borgne", "de Belle-Isle",
+    "de Menou", "d'Aulnay", "Denys", "Cosnier", "Le Borgne", "de Belle Isle",
     "Motin", "de Reux", "d'Andigne", "de Grandfontaine", "Flotte", "de la Frediere"]
 
 male_mix_names = male_sax_names + male_lat_names
