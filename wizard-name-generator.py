@@ -102,7 +102,12 @@ male_lat_names = ["Oriol", "Percillier", "Zepherin", "Severin", "Remy", "Juan",
     "Jean-Baptiste", "Augustin", "Joseph-Marie", "Michel", "Gabriel", "Guy",
     "Florimond", "Charles", "Isaac", "Emmanuel", "Alexandre", "Hector", "Gaston",
     "Balthazard", "Annibal", "Alexis", "Annibal-Alexis", "Balthazard-Annibal-Alexis",
-    "Balthazard-Annibal", "Balthazard-Alexis"]
+    "Balthazard-Annibal", "Balthazard-Alexis", "Thoth", "Hermes", "Pan", "Priape",
+    "Priapo", "Osiris", "Melquisedec", "Melchisedech", "Amon", "Montou", "Montu",
+    "Heracles", "Hercule", "Orphee", "Orfeo", "Odiseo", "Ulises", "Ulysse", "Odysseus",
+    "Virgile", "Virgilio", "Catulo", "Catulle", "Martial", "Marcial", "Alcofribas",
+    "Serafin", "Apolonio", "Apollonius", "Manes", "Pitagoras", "Pythagore", "Basilide",
+    "Basilides", "Valentin", "Bardesane", "Bardesano"]
 female_lat_names = ["Jeliette", "Ariane", "Pilar", "Polaire", "Eliane", "Ana",
     "Sofia", "Ana Sofia", "Alivienne", "Ghislaine", "Ysabeau", "Elena", "Ofelia",
     "Albine", "Corentine", "Dominique", "Estienette", "Nicole", "Catherine",
@@ -190,10 +195,15 @@ lat_surnames = ["Alvarez", "du Nuit", "Castillo", "Gutierrez de la Concha",
     "Malcorbeau", "de La Croix", "Leforgeron", "Beaufee", "Bellefils", "Bonflamme",
     "Desfoix", "Malgrange", "du Houx", "Dulieu", "Beauloup", "Bellemaitre",
     "Bonmont", "Despyjons", "Malrue", "le Soleil", "Delabaguette", "Boulanger",
-    "Dugua", "de Mons", "de Biencourt", "de Pourtincourt", "de Saint-Just",
+    "Dugua", "de Mons", "de Biencourt", "de Poutrincourt", "de Saint-Just",
     "Amador", "de Salazar", "de Saint-Etienne", "de La Tour", "de Razilly",
     "de Menou", "d'Aulnay", "Denys", "Cosnier", "Le Borgne", "de Belle Isle",
-    "Motin", "de Reux", "d'Andigne", "de Grandfontaine", "Flotte", "de la Frediere"]
+    "Motin", "de Reux", "d'Andigne", "de Grandfontaine", "Flotte", "de la Frediere",
+    "Rogue", "Gobe", "Planche", "Bibine", "Chourave", "Deauclaire", "Verpey",
+    "Croupton", "Ombrage", "Crochue", "Beausoleil", "Bellerue", "Bonpyjon", "Desmonts",
+    "Malmaitre", "Desloups", "Bonlieu", "Bellehoux", "Voisin", "Beaugrange", "Bellefoi",
+    "Bonfils", "Desfees", "Malforgeron", "Descroix", "Boncorbeau", "Bellchouette",
+    "Beaucadavre", "Boneau", "Bellbois"]
 
 male_mix_names = male_sax_names + male_lat_names
 female_mix_names = female_sax_names + female_lat_names
