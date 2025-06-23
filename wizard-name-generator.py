@@ -199,6 +199,67 @@ male_mix_names = male_sax_names + male_lat_names
 female_mix_names = female_sax_names + female_lat_names
 mix_surnames = sax_surnames + lat_surnames
 
+## function definitions
+def saxon_name(gender):
+    if gender == "male":
+        fname = random.choice(male_sax_names)
+    elif gender == "female":
+        fname = random.choice(female_sax_names)
+    else:
+        print("Bad gender argument!")
+    rand = random.randint(1, 10)
+    if rand == 1:
+        lname = random.choice(sax_surnames) + "-" + random.choice(sax_surnames)
+    elif rand == 10:
+        lname = random.choice(sax_surnames) + " " + random.choice(sax_surnames)
+    else:
+        lname = random.choice(sax_surnames)
+    print(fname, lname)
+
+def latin_name(gender):
+    if gender == "male":
+        fname = random.choice(male_lat_names)
+    elif gender == "female":
+        fname = random.choice(female_lat_names)
+    else:
+        print("Bad gender argument!")
+    rand = random.randint(1,6)
+    if rand == 1:
+        lname = random.choice(lat_surnames) + " y " + random.choice(lat_surnames)
+    elif rand == 2:
+        lname = random.choice(lat_surnames) + " et " + random.choice(lat_surnames)
+    elif rand == 3:
+        lname = random.choice(lat_surnames) + " " + random.choice(lat_surnames)
+    else:
+        lname = random.choice(lat_surnames)
+    print(fname, lname)
+
+def mixed_name(gender):
+    if gender == "male":
+        fname = random.choice(male_mix_names)
+    elif gender == "female":
+        fname = random.choice(female_mix_names)
+    else:
+        print("Bad gender argument!")
+    rand = random.randint(1,9)
+    if rand == 1:
+        lname = random.choice(mix_surnames) + " y " + random.choice(mix_surnames)
+    elif rand == 2:
+        lname = random.choice(mix_surnames) + " et " + random.choice(mix_surnames)
+    elif rand == 3:
+        lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
+    elif rand == 4:
+        lname = random.choice(mix_surnames) + "-" + random.choice(mix_surnames)
+    elif rand == 5:
+        lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
+    elif rand == 6:
+        lname = random.choice(mix_surnames) + "-" + random.choice(mix_surnames)
+    else:
+        lname = random.choice(mix_surnames)
+    print(fname, lname)
+
+## operation time!
+
 print("Welcome to the Digitized Mages' Onomastikon!")
 while test == True:
     gender = input("Is your mage male or female? ")
@@ -225,96 +286,15 @@ while test == True:
         print("Improper input! Try again, my friend!")
 
 while number > 0:
-    if gender == "male":
-        if group == "saxon":
-            fname = random.choice(male_sax_names)
-            rand = random.randint(1, 10)
-            if rand == 1:
-                lname = random.choice(sax_surnames) + "-" + random.choice(sax_surnames)
-            elif rand == 10:
-                lname = random.choice(sax_surnames) + " " + random.choice(sax_surnames)
-            else:
-                lname = random.choice(sax_surnames)
-            print(fname, lname)
-            number -= 1
-        elif group == "latin":
-            fname = random.choice(male_lat_names)
-            rand = random.randint(1,6)
-            if rand == 1:
-                lname = random.choice(lat_surnames) + " y " + random.choice(lat_surnames)
-            elif rand == 2:
-                lname = random.choice(lat_surnames) + " et " + random.choice(lat_surnames)
-            elif rand == 3:
-                lname = random.choice(lat_surnames) + " " + random.choice(lat_surnames)
-            else:
-                lname = random.choice(lat_surnames)
-            print(fname, lname)
-            number -= 1
-        elif group == "mixed":
-            fname = random.choice(male_mix_names)
-            rand = random.randint(1,9)
-            if rand == 1:
-                lname = random.choice(mix_surnames) + " y " + random.choice(mix_surnames)
-            elif rand == 2:
-                lname = random.choice(mix_surnames) + " et " + random.choice(mix_surnames)
-            elif rand == 3:
-                lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
-            elif rand == 4:
-                lname = random.choice(mix_surnames) + "-" + random.choice(mix_surnames)
-            elif rand == 5:
-                lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
-            elif rand == 6:
-                lname = random.choice(mix_surnames) + "-" + random.choice(mix_surnames)
-            else:
-                lname = random.choice(mix_surnames)
-            print(fname, lname)
-            number -= 1
-        else:
-            print("Something went wrong!")
-            number -= 1
-    elif gender == "female":
-        if group == "saxon":
-            fname = random.choice(female_sax_names)
-            rand = random.randint(1, 10)
-            if rand == 1:
-                lname = random.choice(sax_surnames) + "-" + random.choice(sax_surnames)
-            elif rand == 10:
-                lname = random.choice(sax_surnames) + " " + random.choice(sax_surnames)
-            else:
-                lname = random.choice(sax_surnames)
-            print(fname, lname)
-            number -= 1
-        elif group == "latin":
-            fname = random.choice(female_lat_names)
-            rand = random.randint(1,6)
-            if rand == 1:
-                lname = random.choice(lat_surnames) + " y " + random.choice(lat_surnames)
-            elif rand == 2:
-                lname = random.choice(lat_surnames) + " et " + random.choice(lat_surnames)
-            elif rand == 3:
-                lname = random.choice(lat_surnames) + " " + random.choice(lat_surnames)
-            else:
-                lname = random.choice(lat_surnames)
-            print(fname, lname)
-            number -= 1
-        elif group == "mixed":
-            fname = random.choice(female_mix_names)
-            rand = random.randint(1,6)
-            if rand == 1:
-                lname = random.choice(mix_surnames) + " y " + random.choice(mix_surnames)
-            elif rand == 2:
-                lname = random.choice(mix_surnames) + " et " + random.choice(mix_surnames)
-            elif rand == 3:
-                lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
-            elif rand == 4:
-                lname = random.choice(mix_surnames) + "-" + random.choice(mix_surnames)
-            else:
-                lname = random.choice(mix_surnames)
-            print(fname, lname)
-            number -= 1
-        else:
-            print("Something went wrong!")
-            number -= 1
+    if group == "saxon":
+        saxon_name(gender)
+        number -= 1
+    elif group == "latin":
+        latin_name(gender)
+        number -= 1
+    elif group == "mixed":
+        mixed_name(gender)
+        number -= 1
     else:
         print("Something went wrong!")
         number -= 1
