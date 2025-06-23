@@ -2,10 +2,10 @@ import random
 
 test = True
 
-pukwudgie_initials = ["T", "J", "N", "K", "Kw", "F", "D", "Ch", "M", "G", "V"]
-pukwudgie_medials = ["t", "j", "n", "ff", "ck", "d", "ch", "m", "v", "g"]
+pukwudgie_initials = ["T", "T", "J", "J", "N", "K", "F", "D", "Ch", "M", "G", "V"]
+pukwudgie_medials = ["t", "j", "n", "n", "ff", "ff", "ck", "ck", "d", "ch", "m", "v", "g"]
 pukwudgie_vowels = ["a", "o", "i", "a", "e", "e", "o", "i", "oo", "ee"]
-pukwudgie_finals = ["r", "l", "m", "n"]
+pukwudgie_finals = ["r", "r", "l", "m", "n"]
 
 print("Welcome to the Pukwudgie Namer!")
 while test == True:
