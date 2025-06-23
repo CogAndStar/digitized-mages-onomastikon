@@ -244,7 +244,7 @@ while number > 0:
             fname = random.choice(female_sax_names)
             rand = random.randint(1, 10)
             if rand == 1:
-                lname = random.choice(sax_nurnames) + "-" + random.choice(sax_surnames)
+                lname = random.choice(sax_surnames) + "-" + random.choice(sax_surnames)
             elif rand == 10:
                 lname = random.choice(sax_surnames) + " " + random.choice(sax_surnames)
             else:
