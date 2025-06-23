@@ -227,7 +227,7 @@ def latin_name(gender):
     if rand == 1:
         lname = random.choice(lat_surnames) + " y " + random.choice(lat_surnames)
     elif rand == 2:
-        lname = random.choice(lat_surnames) + " et " + random.choice(lat_surnames)
+        lname = random.choice(lat_surnames) + " dit " + random.choice(lat_surnames)
     elif rand == 3:
         lname = random.choice(lat_surnames) + " " + random.choice(lat_surnames)
     else:
@@ -245,7 +245,7 @@ def mixed_name(gender):
     if rand == 1:
         lname = random.choice(mix_surnames) + " y " + random.choice(mix_surnames)
     elif rand == 2:
-        lname = random.choice(mix_surnames) + " et " + random.choice(mix_surnames)
+        lname = random.choice(mix_surnames) + " dit " + random.choice(mix_surnames)
     elif rand == 3:
         lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
     elif rand == 4:
@@ -262,6 +262,14 @@ def mixed_name(gender):
 
 print("Welcome to the Digitized Mages' Onomastikon!")
 while test == True:
+    choice = input("Are you looking for a particular name, or a swathe of names? ")
+    if choice == "particular" or choice == "swathe":
+        test = False
+    else:
+        print("Improper input! Try typing 'particular' or 'swathe', my friend!")
+
+test = True
+while test == True and choice == "particular":
     gender = input("Is your mage male or female? ")
     if gender == "male" or gender == "female":
         test = False
@@ -269,7 +277,7 @@ while test == True:
         print("Improper input! Try again, my friend!")
 
 test = True
-while test == True:
+while test == True and choice == "particular":
     group = input("Is your mage a Saxon, a Latin, or mixed? ")
     if group == "saxon" or group == "latin" or group == "mixed":
         test = False
@@ -285,18 +293,35 @@ while test == True:
     except:
         print("Improper input! Try again, my friend!")
 
-while number > 0:
+while number > 0 and choice == "particular":
     if group == "saxon":
         saxon_name(gender)
-        number -= 1
     elif group == "latin":
         latin_name(gender)
-        number -= 1
     elif group == "mixed":
         mixed_name(gender)
-        number -= 1
     else:
         print("Something went wrong!")
-        number -= 1
+    number -= 1
+
+while number > 0 and choice == "swathe":
+    x = random.randint(1,2)
+    if x == 1:
+        gender = "male"
+    elif x == 2:
+        gender = "female"
+    else:
+        print ("Something went wrong!")
+
+    y = random.randint(1,3)
+    if y == 1:
+        saxon_name(gender)
+    elif y == 2:
+        latin_name(gender)
+    elif y == 3:
+        mixed_name(gender)
+    else:
+        print("Something went wrong!")
+    number -= 1
 
 print("There you go!")
