@@ -2,6 +2,32 @@ import random
 
 test = True
 
+## HARMONIC STANDARD NAMES
+harmonic_initials_short_norm = ["Ka", "Sa", "Ta", "Ha", "Ma", "Ya", "Ra", "Wa", "Ki", "Si", "Ti", "Hi", "Ri", "Wi", "Ku", "Su", "Tu",
+    "Hu", "Yu", "Ru", "Ke", "Se", "Te", "He", "Re", "We", "Ko", "So", "To", "Ho", "Yo", "Ro", "Wo", "Ga", "Za", "Da", "Ba", "Pa", "Gi",
+    "Zi", "Di", "Bi", "Pi", "Gu", "Zu", "Du", "Bu", "Pu", "Ge", "Ze", "De", "Be", "Pe", "Go", "Zo", "Do", "Bo", "Po", "A", "I",
+    "E", "O", "U"]
+harmonic_initials_long_norm = ["Kâ", "Sâ", "Tâ", "Hâ", "Mâ", "Yâ", "Râ", "Wâ", "Kî", "Sî", "Tî", "Hî", "Rî", "Wî", "Kû", "Sû", "Tû",
+    "Hû", "Yû", "Rû", "Kê", "Sê", "Tê", "Hê", "Re", "Wê", "Kô", "Sô", "Tô", "Hô", "Yô", "Rô", "Wô", "Gâ", "Zâ", "Dâ", "Bâ", "Pâ", "Gî",
+    "Zî", "Dî", "Bî", "Pî", "Gû", "Zû", "Dû", "Bû", "Pû", "Gê", "Zê", "Dê", "Bê", "Pê", "Gô", "Zô", "Dô", "Bô", "Pô", "Â", "Î",
+    "Ê", "Ô", "Û"]
+harmonic_initials_short_y = ["Kya", "Sya", "Tya", "Hya", "Rya", "Kyu", "Syu", "Tyu", "Hyu", "Ryu", "Kyo", "Syo", "Tyo", "Hyo",
+    "Ryo", "Gya", "Zya", "Dya", "Bya", "Pya", "Gyu", "Zyu", "Dyu", "Byu", "Pyu", "Gyo", "Zyo", "Dyo", "Byo", "Pyo"]
+harmonic_initials_long_y = ["Kyâ", "Syâ", "Tyâ", "Hyâ", "Ryâ", "Kyû", "Syû", "Tyû", "Hyû", "Ryû", "Kyô", "Syô", "Tyô", "Hyô",
+    "Ryô", "Gyâ", "Zyâ", "Dyâ", "Byâ", "Pyâ", "Gyû", "Zyû", "Dyû", "Byû", "Pyû", "Gyô", "Zyô", "Dyô", "Byô", "Pyô"]
+harmonic_medials_short = ["ka", "sa", "ta", "ha", "ma", "ya", "ra", "wa", "ki", "si", "ti", "hi", "ri", "wi", "ku", "su", "tu",
+    "hu", "yu", "ru", "ke", "se", "te", "he", "re", "we", "ko", "so", "to", "ho", "yo", "ro", "wo", "ga", "za", "da", "ba", "pa",
+    "gi", "zi", "di", "bi", "pi", "gu", "zu", "du", "bu", "pu", "ge", "ze", "de", "be", "pe", "go", "zo", "do", "bo", "po", "a",
+    "i", "e", "o", "u"]
+harmonic_medials_long = ["kâ", "sâ", "tâ", "hâ", "mâ", "yâ", "râ", "wâ", "kî", "sî", "tî", "hî", "rî", "wî", "kû", "sû", "tû",
+    "hû", "yû", "rû", "kê", "sê", "tê", "hê", "re", "wê", "kô", "sô", "tô", "hô", "yô", "rô", "wô", "gâ", "zâ", "dâ", "bâ", "pâ",
+    "gî", "zî", "dî", "bî", "pî", "gû", "zû", "dû", "bû", "pû", "gê", "zê", "dê", "bê", "pê", "gô", "zô", "dô", "bô", "pô", "â",
+    "î", "ê", "ô", "û"]
+harmonic_medials_gem = ["kka", "ssa", "tta", "ha", "ma", "ya", "ra", "wa", "kki", "ssi", "tti", "hi", "ri", "wi", "kku", "ssu",
+    "ttu", "hu", "yu", "ru", "kke", "sse", "tte", "he", "re", "we", "kko", "sso", "tto", "ho", "yo", "ro", "wo", "ga", "za", "da",
+    "ba", "ppa", "gi", "zi", "di", "bi", "ppi", "gu", "zu", "du", "bu", "ppu", "ge", "ze", "de", "be", "ppe", "go", "zo", "do", "bo",
+    "ppo", "a", "i", "e", "o", "u"]
+
 ## KOSMANO PERSONAL NAMES
 kosmano_given_names = ["Aluminio", "Amazono", "Amikeco", "Amuro", "Arabidopso", "Argono", "Arĝento", "Belo", "Bramaputro",
     "Celo", "Dediĉo", "Delfinio", "Demokratio", "Dioskoreo", "Egalo", "Ekscelenco", "Elektro", "Fero", "Forto", "Fosforo",
@@ -54,7 +80,19 @@ american_surnames = ["Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia",
 american_names = american_given_names + american_surnames
 
 ## EURO NAMES
-euro_given_names = []
+euro_given_names = ["Hugo", "Mateo", "Martin", "Leo", "Lucas", "Manuel", "Pablo", "Alejandro", "Enzo", "Daniel", "Alvaro",
+    "Thiago", "Adrian", "Mario", "Liam", "Diego", "Luca", "Bruno", "Oliver", "Gonzalo", "Lucia", "Sofia", "Martina", "Maria",
+    "Julia", "Valeria", "Olivia", "Emma", "Paula", "Vega", "Mia", "Alma", "Carmen", "Daniela", "Carla", "Sara", "Lara", "Jimena",
+    "Lola", "Gala", "Gabriel", "Raphael", "Louis", "Noah", "Arthur", "Adam", "Jules", "Mael", "Leon", "Isaac", "Eden", "Sacha",
+    "Marceau", "Noe", "Gabin", "Mohamed", "Aaron", "Louise", "Jade", "Ambre", "Alba", "Emma", "Romy", "Rose", "Alice", "Anna",
+    "Lou", "Inaya", "Adele", "Lina", "Iris", "Agathe", "Giulia", "Charlie", "Matteo", "Elias", "Theo", "Finn", "Paul",
+    "Emil", "Henry", "Felix", "Ben", "Levi", "Mohammed", "Anton", "Oskar", "Lukas", "Emilia", "Sophia", "Hannah", "Ella", "Lia",
+    "Leni", "Mila", "Ida", "Clara", "Mathilda", "Frieda", "Marie", "Malia", "Leonie", "Lilly", "Lea", "Maja", "Leonardo",
+    "Edoardo", "Tommaso", "Francesco", "Alessandro", "Mattia", "Lorenzo", "Gabriele", "Riccardo", "Andrea", "Giuseppe", "Enea",
+    "Niccolo", "Antonio", "Federico", "Giovanni", "Filippo", "Samuele", "Aurora", "Ginevra", "Vittoria", "Beatrice", "Ludovica",
+    "Matilde", "Camilla", "Bianca", "Azzurra", "Chiara", "Nicole", "Giorgia", "Isabel", "Greta", "Noemi", "Sem", "Mees", "Noud",
+    "Levi", "Adam", "Daan", "Sam", "Milan", "Luuk", "Guus", "Zayn", "Mats", "Mason", "Bram", "Nora", "Sophie", "Mila", "Noor",
+    "Yara", "Zoe", "Tess", "Elin", "Luna", "Maeve", "Milou", "Nina", "Saar", "Evi", "Eva", "Lotte"]
 euro_surnames = ["Martin", "Bernard", "Dubois", "Thomas", "Robert", "Richard", "Petit", "Durand", "Leroy", "Moreau", "Simon",
     "Laurent", "Lefebvre", "Michel", "Garcia", "David", "Bertrand", "Roux", "Vincent", "Fournier", "Muller", "Schmidt", "Schneider",
     "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Schulz", "Hoffmann", "Schafer", "Koch", "Bauer", "Richter", "Klein",
@@ -67,7 +105,12 @@ euro_surnames = ["Martin", "Bernard", "Dubois", "Thomas", "Robert", "Richard", "
 euro_names = euro_given_names + euro_surnames
 
 ## RUSSIAN NAMES
-russian_given_names = []
+russian_given_names = ["Aleksandr", "Mikhail", "Maksim", "Lev", "Mark", "Artyom", "Ivan", "Matvey", "Dmitriy", "Daniil",
+    "Sofiya", "Mariya", "Anna", "Yeva", "Alisa", "Viktoriya", "Polina", "Aleksandra", "Varvara", "Yelizaveta", "Vasilisa",
+    "Kseniya", "Anastasiya", "Arina", "Yekaterina", "Veronika", "Darya", "Milana", "Miroslava", "Kira", "Valeriya", "Amina",
+    "Yeseniya", "Roman", "Timofey", "Miron", "Mukhammad", "Kirill", "Andrey", "Ilya", "Aleksey", "Nikita", "Fyodor", "Yegor",
+    "Konstantin", "Vladimir", "Timur", "Yaroslav", "David", "Arseniy", "Sergey", "Amir", "Pavel", "Vera", "Safiya", "Miya",
+    "Ulyana", "Sofya", "Alina", "Taisiya"]
 russian_surnames = ["Ivanov", "Smirnov", "Petrov", "Sidorov", "Kuznetsov", "Popov", "Vasiliev", "Sokolov", "Mikhailov", "Novikov",
     "Fyodorov", "Ivanova", "Smirnova", "Petrova", "Sidorova", "Kuznetsova", "Popova", "Vasilieva", "Sokolova", "Mikhailova",
     "Fyodorova", "Morozov", "Morozova", "Volkov", "Volkova", "Alekseev", "Alekseeva", "Lebedev", "Lebedeva", "Semyonov",
@@ -79,7 +122,10 @@ russian_surnames = ["Ivanov", "Smirnov", "Petrov", "Sidorov", "Kuznetsov", "Popo
 russian_names = russian_given_names + russian_surnames
 
 ## JAPANESE NAMES
-japanese_given_names = []
+japanese_given_names = ["Sora", "Hinata", "Yuu", "Ao", "Hiromi", "Katsumi", "Ritsu", "Shion", "Nao", "Nagi", "Ren", "Yuuki",
+    "Tsubasa", "Kyou", "Kou", "Fuku", "Jun", "Yuki", "Makoto", "Kaede", "Masami", "Haru", "Chihiro", "Yoshi", "Hifumi", "Minoru",
+    "Hibiki", "Kazumi", "Yoshimi", "Takara", "Yoshie", "Rin", "Kohaku", "Asahi", "Kaoru", "Hikaru", "Kanata", "Minato", "Michi",
+    "Hikari", "Yasu", "Chiharu", "Shun", "Shinobu", "Misao", "Haruka", "Akira", "Kei", "Chiaki"]
 japanese_surnames = ["Akiyama", "Mori", "Mukai", "Wakata", "Doi", "Noguchi", "Hoshide", "Yamazaki", "Furukawa", "Yui",
     "Onishi", "Kanai", "Maezawa", "Hirano", "Sato", "Suzuki", "Takahashi", "Tanaka", "Watanabe", "Ito", "Nakamura", "Kobayashi",
     "Yamamoto", "Kato", "Yoshida", "Yamada", "Sasaki", "Yamaguchi", "Matsumoto", "Inoue", "Kimura", "Shimizu", "Hayashi",
@@ -89,14 +135,74 @@ japanese_surnames = ["Akiyama", "Mori", "Mukai", "Wakata", "Doi", "Noguchi", "Ho
 japanese_names = japanese_given_names + japanese_surnames
 
 ## CHINESE NAMES
-chinese_given_names = []
-chinese_surnames = []
+chinese_given_names = ["Lin", "Qing", "Jian", "Meng", "Shi", "Qiu", "Fang", "Heng", "Xue", "Ying", "Chao", "Yuan", "Ru", "Zhi",
+    "Yu", "Da", "Nan", "Yichen", "Tu", "Huan", "Xing", "Yahui", "Tai", "Lan", "Yanping", "Shun", "Haoran", "Jin", "Yiting",
+    "Ling", "Lian", "Chen", "Yong", "Muchen", "Rong", "Sheng", "Haoyu", "Jingyi", "Jia", "Zan", "Shan", "Yan", "Hua", "Xinyi",
+    "Chang", "Xun", "Fu", "Yating", "Ning", "Li", "Hui", "Kun", "Xiaodong", "Yuxuan", "Jingjing", "Xiaoming", "Zhihao", "Bo",
+    "Wu", "Chun", "Yihan", "Mu", "Yi", "Yijun", "Su", "Jiang", "Yang", "Guanyu", "Jie", "Min", "Yun", "Bao", "Xiang", "Bai",
+    "Zhou", "Wen", "Ming", "Qiangguo", "Dongfeng", "Jianguo", "Bin", "Yue", "Xia", "Zonghan", "Zheng", "Peng", "Ruoxi", "Shui",
+    "Guo", "Ping", "Guanting", "Xin", "Xiaohong", "An", "He", "Cheng", "Guiying", "Jun", "Hai", "Xiaoli", "Xiaohua", "Jianhua",
+    "Liwei", "Junlong", "Haisheng", "Haipeng", "Boming", "Zhigang", "Wang", "Yang", "Xiaoguang", "Yaping", "Dong", "Hongbo",
+    "Guangfu", "Xuzhe", "Qingming", "Lu", "Yangzhu", "Haichao", "Shengjie", "Xinlin", "Cong", "Guangsu", "Lingdong", "Haoze",
+    "Zhongrui"]
+chinese_surnames = ["Yang", "Fei", "Nie", "Jing", "Liu", "Zhai", "Zhang", "Wang", "Chen", "Tang", "Ye", "Cai", "Deng", "Zhu",
+    "Gui", "Tang", "Jiang", "Li", "Song", "Wang", "Wu", "Pan", "Zhao", "Lan", "Wei", "Jin", "Chai", "Dong", "Du", "Fang", "Hu",
+    "Ma", "Zheng", "Meng", "Shao", "Yu", "Xi", "Ding", "He", "Huang", "Shi", "Yin", "Yuan"]
 chinese_names = chinese_given_names + chinese_surnames
 
 ## INDIAN NAMES
-indian_given_names = []
-indian_surnames = []
+indian_given_names = ["Amarjeet", "Jothi", "Parminder", "Gul", "Durga", "Nur", "Sri", "Mandeep", "Ferdous", "Shashi", "Rupinder",
+    "Inayat", "Kajal", "Swarna", "Kiran", "Apurva", "Arya", "Navneet", "Ratnam", "Nasim", "Gulbahar", "Amandeep", "Swaran", "Hira",
+    "Chandra", "Hardeep", "Ganga", "Madhur", "Akram", "Sukhdeep", "Gulzar", "Jaswinder", "Shams", "Nilam", "Khurshid", "Ratna",
+    "Simran", "Manjeet", "Parvin", "Mahendra", "Tabassum", "Dilshad", "Suman", "Lakshmi", "Ismat", "Harpreet", "Balwinder",
+    "Mitra", "Jaya", "Rashmi", "Gurmeet", "Kausar", "Vijaya", "Rajendra", "Santosh", "Indrajit", "Mumtaz", "Jyoti", "Shahnaz",
+    "Narendra", "Kanti", "Taj", "Karuna", "Nitya", "Padma", "Rajani", "Madhu", "Amardeep"]
+indian_surnames = ["Shukla", "Nair", "Krishnan", "Pratap", "Sharma", "Malhotra", "Chawla", "Bandla", "Thotakura", "Bahal",
+    "Achari", "Banerjee", "Bhatnagar", "Bose", "Chauhan", "Chopra", "Das", "Dutta", "Gupta", "Johar", "Kapoor", "Mahajan",
+    "Mehra", "Nehru", "Patil", "Rao", "Saxena", "Shah", "Singh", "Trivedi", "Venkatesan", "Verma", "Yadav", "Devi", "Singh",
+    "Kumar", "Ram", "Kumari", "Lal", "Bai", "Khatun", "Mandal", "Ray", "Mondal", "Sah", "Patel", "Prasad", "Ghosh"]
 indian_names = indian_given_names + indian_surnames
+
+## INDONESIAN NAMES
+indo_names = ["Hasan", "Suparman", "Wulandari", "Prasetyo", "Prakoso", "Setiadewi", "Suprapto", "Yovan", "Gunardio", "Darmawan", "Nur",
+    "Eka", "Cahaya", "Ketut", "Wayan", "Komang", "Tirta", "Purnama", "Dian", "Kusuma", "Made", "Dwi", "Sri", "Juni", "Eko", "Rizki",
+    "Yusri", "Nurul", "Cahya", "Tri", "Mega", "Nyoman", "Nor", "Noor", "Putu", "Kadek", "Rizky", "Iman", "Amin", "Edi", "Fikri",
+    "Shamsuddin", "Yahya", "Mohamad", "Ahmad", "Bambang", "Adi", "Jusuf", "Kuwat", "Osman", "Harun", "Joko", "Shinta", "Farah",
+    "Sumarni", "Sharifah", "Wahyuni", "Nadia", "Indah", "Shahida", "Rani", "Devi", "Wati", "Asma", "Kartini", "Khadijah", "Aisyah",
+    "Pratiwi", "Pujilestari", "Muzakir", "Manaf", "Muhammad", "Bobby", "Afif", "Nasution", "Mahyeldi", "Ansharullah", "Abdul",
+    "Wahid", "Ansar", "Al", "Haris", "Herman", "Deru", "Helmi", "Hidayat", "Arsani", "Muhaya", "Rahmat", "Mirzani", "Faisol",
+    "Djausal", "Andra", "Soni", "Zainal", "Abidin", "Yasni", "Pramono", "Anung", "Wibowo", "Dedi", "Kang", "Mulyadi", "Luthfi",
+    "Makali", "Musarofah", "Khofifah", "Hadi", "Indar", "Parawansa", "Lalu", "Iqbal", "Ria", "Norsan", "Agustiar", "Sabran",
+    "Benny", "Sherly", "Laos", "Tjoanda"]
+
+## BRAZILIAN NAMES
+br_given_names = ["Joao", "Gabriel", "Lucas", "Pedro", "Mateus", "Jose", "Gustavo", "Guilherme", "Carlos", "Vitor", "Felipe", "Marcos",
+    "Rafael", "Luiz", "Daniel", "Eduardo", "Matheus", "Luis", "Bruno", "Paulo", "Leonardo", "Vinicius", "Davi", "Maria", "Ana",
+    "Vitoria", "Julia", "Leticia", "Amanda", "Beatriz", "Larissa", "Gabriela", "Mariana", "Bruna", "Camila", "Isabela", "Luana", "Sara",
+    "Eduarda", "Bianca", "Rafaela", "Geovana", "Fernanda", "Natalia", "Laura", "Juliana"]
+br_surnames = ["da Silva", "dos Santos", "Pereira", "Alves", "Ferreira", "Rodrigues", "Silva", "de Oliveira", "de Souza", "Gomes",
+    "Santos", "Oliveira", "Ribeiro", "de Jesus", "Soares", "Martins", "Barbosa", "Vieira", "Souza", "Lopes", "Batista", "Fernandes",
+    "Costa", "de Sousa", "Dias", "da Conceiçao", "de Lima", "do Nascimento", "Moreira", "Nunes", "da Costa", "Araujo", "Cardoso",
+    "de Almeida", "Mendes", "Nascimento", "Teixeira", "Ramos"]
+br_names = br_given_names + br_surnames
+
+## KENYA NAMES
+kenya_given_names = ["Zawadi", "Favour", "Gift", "Mosi", "Tumaini", "Imani", "Promise", "Bahati", "Praise", "Makena", "Blessing",
+    "Monday", "Given", "Bijou", "Kariuki", "Furaha", "Uhuru", "Wangari", "Hawa", "Samwel", "Mariamu", "Zuberi", "Peace"]
+kenya_surnames = ["Mwinyihaji", "Juma", "Madzayo", "Mungatana", "Githuku", "Mwarume", "Haji", "Mohamed", "Roba", "Chute",
+    "Fatuma", "Murungi", "Mwenda", "Mundigi", "Wambua", "Muthama", "Maanzo", "Methu", "Wamatinga", "Murango", "Nyutu", "Thang'wa",
+    "Ekomwa", "Murgor"]
+kenya_names = kenya_given_names + kenya_surnames
+
+## KAZAKH NAMES
+kazakh_given_names = ["Amirkhan", "Aina", "Saule", "Zamir", "Aidana", "Saltanat", "Aigul", "Ali", "Muhamed", "Mariyam", "Aliya",
+    "Gulnaz", "Muhammed", "Aijan", "Temir", "Almas", "Arujan", "Baqyt", "Aibek", "Nursultan", "Aisa", "Ayajan", "Hamza", "Aibek",
+    "Sanjar", "Safiya", "Ayda", "Nurasyl", "Aidana", "Erasyl", "Smagul", "Shamil", "Togjan", "Almaz", "Muhtar", "Adil", "Medina",
+    "Juldyz", "Nazira", "Karim", "Toktar", "Talgat", "Aidyn"]
+kazakh_surnames = ["Abdullaev", "Ismailov", "Aliev", "Suleimenov", "Ahmetov", "Musaev", "Smagulov", "Karimov", "Ysmaiylov", "Qadyrov",
+    "Sultanov", "Omarova", "Abdullaeva", "Ismailova", "Suleimenova", "Ahmetova", "Musaeva", "Smagulova", "Karimova", "Ysmaiylova",
+    "Qaydrova", "Sultanova", "Omarov", "Aubakirov", "Aubakirova", "Musabayev", "Musabayeva", "Aimbetov", "Aimbetova"]
+kazakh_names = kazakh_given_names + kazakh_surnames
 
 ## CYBORG NAMES
 cyborg_given_names = ["Fulan", "Juan", "Hans", "Jan", "Pepito", "Matti", "Maija", "Max", "Erika", "Xiaoming", "Zhiming", "Chunjiao",
@@ -106,29 +212,211 @@ cyborg_letters = ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "
     "Xi", "Omicron", "Pi", "Rho", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"]
 cyborg_numbers = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"]
 
-personal_names = kosmano_names + american_names + euro_names + russian_names + japanese_names + chinese_names + indian_names + cyborg_given_names
+## UTOPIAN NAMES
+utopian_names = ["Stratospheric", "Heliopause", "Solanaceae", "Tangent", "Sequitur", "Aspartame", "Dysthymia", "Anemone", "Marzipan",
+    "Recalcitrance", "Geranium", "Fluorescent", "Antecedent", "Kombucha", "Melatonin", "Echinacea", "Instance", "Arabesque", "Aluminium",
+    "Burnish", "Tiramisu", "Eudicot", "Halitosis", "Congruence", "Utopia", "Obsequious", "Rhetorical", "Nougat", "Basorexia", "Nomination",
+    "Olivaceous", "Baculum", "Symbiosis", "Vestibule", "Zeitgeist", "Vendetta", "Pareidolia", "Nutmeg", "Edamame", "Salubrious", "Valediction",
+    "Judicious", "Pelagic", "Teriyaki", "Simplicity", "Complexity", "Contraption", "Cumulus", "Cirrus", "Nimbus", "Oriel", "Quadrilateral",
+    "Turquoise"]
+
+personal_given_names = kosmano_given_names + american_given_names + euro_given_names + russian_given_names + japanese_given_names + chinese_given_names + indian_given_names + cyborg_given_names + indo_names + br_given_names + kenya_given_names + kazakh_given_names + utopian_names
+personal_surnames = kosmano_surnames + american_surnames + euro_surnames + russian_surnames + japanese_surnames + chinese_surnames + indian_surnames + indo_names + br_surnames + kenya_surnames + kazakh_surnames
+personal_names = kosmano_names + american_names + euro_names + russian_names + japanese_names + chinese_names + indian_names + cyborg_given_names + indo_names + br_names + kenya_names + kazakh_names + utopian_names
 
 ## NAME GEN FUNCTIONS
+
+def harmonic_namegen():
+    x = random.randint(3,5)
+    y = random.randint(1,12)
+    if y <= 9:
+        name = random.choice(harmonic_initials_short_norm)
+    elif y == 10:
+        name = random.choice(harmonic_initials_long_norm)
+    elif y == 11:
+        name = random.choice(harmonic_initials_short_y)
+    elif y == 12:
+        name = random.choice(harmonic_initials_long_y)
+    while x >= 1:
+        y = random.randint(1,10)
+        if y <= 8:
+            name += random.choice(harmonic_medials_short)
+        elif y == 9:
+            name += random.choice(harmonic_medials_gem) ## to change to geminates
+        elif y == 10:
+            name += random.choice(harmonic_medials_long)
+        x -= 1
+    print(name)
 
 def kosmano_namegen():
     fname = random.choice(kosmano_given_names)
     lname1 = random.choice(kosmano_surnames)
     lname2 = random.choice(kosmano_surnames)
     lname = lname1 + "-" + lname2
+    lname = lname.upper()
     print(fname, lname)
 
 def american_namegen():
     fname = random.choice(american_given_names)
-    lname = random.choice(american_surnames)
+    x = random.randint(1,4)
+    if x == 1 or x == 2:
+        lname = random.choice(american_surnames)
+    elif x == 3:
+        lname1 = random.choice(american_surnames)
+        lname2 = random.choice(american_surnames)
+        lname = lname1 + " " + lname2
+    elif x == 4:
+        lname1 = random.choice(american_surnames)
+        lname2 = random.choice(american_surnames)
+        lname = lname1 + "-" + lname2
+    lname = lname.upper()
     print(fname, lname)
+
+def euro_namegen():
+    fname = random.choice(euro_given_names)
+    x = random.randint(1,3)
+    if x == 1:
+        lname = random.choice(euro_surnames)
+    elif x == 2:
+        lname1 = random.choice(euro_surnames)
+        lname2 = random.choice(euro_surnames)
+        lname = lname1 + " " + lname2
+    elif x == 3:
+        lname1 = random.choice(euro_surnames)
+        lname2 = random.choice(euro_surnames)
+        lname = lname1 + "-" + lname2
+    lname = lname.upper()
+    print(fname, lname)
+
+def russian_namegen():
+    fname = random.choice(russian_given_names)
+    lname = random.choice(russian_surnames)
+    lname = lname.upper()
+    print(fname, lname)
+
+def japanese_namegen():
+    fname = random.choice(japanese_surnames)
+    lname = random.choice(japanese_given_names)
+    fname = fname.upper()
+    print(fname, lname)
+
+def chinese_namegen():
+    fname = random.choice(chinese_surnames)
+    lname = random.choice(chinese_given_names)
+    fname = fname.upper()
+    print(fname, lname)
+
+def indian_namegen():
+    fname = random.choice(indian_given_names)
+    lname = random.choice(indian_surnames)
+    lname = lname.upper()
+    print(fname, lname)
+
+def kazakh_namegen():
+    fname = random.choice(kazakh_given_names)
+    lname = random.choice(kazakh_surnames)
+    lname = lname.upper()
+    print(fname, lname)
+
+def kenya_namegen():
+    fname = random.choice(kenya_given_names)
+    lname = random.choice(kenya_surnames)
+    lname = lname.upper()
+    print(fname, lname)
+
+def br_namegen():
+    fname = random.choice(br_given_names)
+    lname1 = random.choice(br_surnames)
+    lname2 = random.choice(br_surnames)
+    lname1 = lname1.upper()
+    lname2 = lname2.upper()
+    print(fname, lname1, lname2)
+
+def indo_namegen():
+    x = random.randint(1,4)
+    if x < 4:
+        fname = random.choice(indo_names)
+        lname = random.choice(indo_names)
+        print(fname, lname)
+    else:
+        name = random.choice(indo_names)
+        print(name)
 
 def cyborg_namegen():
     fname = random.choice(cyborg_given_names)
     lname1 = random.choice(cyborg_letters)
     lname2 = random.choice(cyborg_numbers)
     lname = lname1 + "-" + lname2
+    lname = lname.upper()
     print(fname, lname)
 
+def utopian_namegen():
+    name = random.choice(utopian_names)
+    print(name)
+
+def mixed_namegen():
+    x = random.randint(1,5)
+    if x == 1:
+        fname = random.choice(personal_given_names)
+        lname = random.choice(personal_surnames)
+        lname = lname.upper()
+        print(fname, lname)
+    elif x == 2:
+        fname = random.choice(personal_surnames)
+        fname = fname.upper()
+        lname = random.choice(personal_given_names)
+        print(fname, lname)
+    elif x == 3:
+        fname = random.choice(personal_given_names)
+        lname1 = random.choice(personal_surnames)
+        lname2 = random.choice(personal_surnames)
+        lname1 = lname1.upper()
+        lname2 = lname2.upper()
+        print(fname, lname1, lname2)
+    elif x == 4:
+        fname = random.choice(personal_given_names)
+        lname1 = random.choice(personal_surnames)
+        lname2 = random.choice(personal_surnames)
+        lname = lname1 + "-" + lname2
+        lname = lname.upper()
+        print(fname, lname)
+    elif x == 5:
+        name = random.choice(personal_names)
+        print(name)
+
+def general_namegen():
+    x = random.randint(1,6)
+    y = random.randint(1,6)
+    z = random.randint(1,6)
+    roll = x + y + z
+    if roll == 3:
+        mixed_namegen()
+    elif roll == 4:
+        utopian_namegen()
+    elif roll == 5:
+        indo_namegen()
+    elif roll == 6:
+        br_namegen()
+    elif roll == 7:
+        japanese_namegen()
+    elif roll == 8:
+        euro_namegen()
+    elif roll == 9:
+        american_namegen()
+    elif roll == 10 or 11 or 18:
+        kosmano_namegen()
+    elif roll == 12:
+        chinese_namegen()
+    elif roll == 13:
+        russian_namegen()
+    elif roll == 14:
+        indian_namegen()
+    elif roll == 15:
+        kazakh_namegen()
+    elif roll == 16:
+        kenya_namegen()
+    elif roll == 17:
+        cyborg_namegen()
 
 ## PLANET NAMES
 old_place_names = ["Argos", "Salamis", "Ithaka", "Phaistos", "Yekaterinburg", "Knossos", "Athens", "Zakros", "Armeni", "Archanes",
@@ -238,7 +526,24 @@ hist_figure_names = ["Gagarin", "Grissom", "Hong", "Tereshkova", "Armstrong", "F
     "Garland", "Ganzorig", "Gauss", "Bradbury", "Faraday", "Roentgen", "Van 't Hoff", "Prudhomme", "Behring", "Dunant", "Passy",
     "Lorentz", "Zeeman", "Fischer", "Ross", "Mommsen", "Ducommun", "Gobat", "Becquerel", "Curie", "Arrhenius", "Bjornson", "Cremer",
     "Finsen", "Rayleigh", "Ramsay", "Pavlov", "Echegaray", "Muir", "Gibson", "Marx", "Engels", "Lenin", "Mao", "Tsiolkovsky",
-    "Mendeleev", "Pavlov", "Lomonosov", "Korolev", "Mendel", "Schrodinger", "Owen", "Fourier", "Bellamy"]
+    "Mendeleev", "Pavlov", "Lomonosov", "Korolev", "Mendel", "Schrodinger", "Owen", "Fourier", "Bellamy", "Lassalle", "Lovelace",
+    "Amina", "Ashoka", "Augustus", "Franklin", "Catherine", "Charlemagne", "Friedrich", "Tubman", "Hatshepsut", "Himiko",
+    "Ibn Battuta", "Isabella", "Rizal", "Lafayette", "Lakshmibai", "Machiavelli", "Napoleon", "Bonaparte", "Pachacuti", "Bolivar",
+    "Tecumseh", "Trung Trac", "Xerxes", "d'Hupay", "Saint-Simon", "Buonarroti", "Babeuf", "Saint-Just", "Cabet", "Leroux", "Sue",
+    "Blanqui", "Proudhon", "Greeley", "Herzen", "Bakunin", "Kingsley", "Lavrov", "Saltykov", "Shchedrin", "Chernyshevsky",
+    "Tolstoy", "Michel", "Morris", "Jones", "Mother Jones", "Big Bill", "Haywood", "Kropotkin", "Carpenter", "Sorel", "Kautsky",
+    "Wilde", "Plekhanov", "Ferrer", "Dewey", "Wells", "Du Bois", "Gorky", "Goldman", "Landauer", "Berkman", "Luxemburg", "Russell",
+    "Pannekoek", "Rocker", "Keller", "Pankhurst", "Volin", "Lukacs", "Kaundinya", "Hippalus", "Posidonius", "Eudoxus", "Zhang Qian",
+    "Xu Fu", "Megasthenes", "Mahinda", "Nearchus", "Faxian", "Herodotus", "Bodhidharma", "Saint Brendan", "Euthymenes",
+    "Hanno", "Himilco", "Scylax", "Xuanzang", "Dicuilus", "Du Huan", "Hyecho", "Ibn Fadlan", "Korsch", "Polanyi", "Vanzetti",
+    "Bordiga", "Serge", "Gramsci", "Sacco", "Day", "Marcuse", "James", "Orwell", "Montseny", "Sartre", "Bookchin", "Zinn",
+    "Castoriadis", "Thompson", "Chomsky", "Fotopoulos", "Wolff", "Ali", "Ocalan", "Hampton", "Zizek", "West", "Hedges", "Varoufakis",
+    "Saito", "Gracchus", "Mazdak", "Roux", "Babeuf", "Blanc", "Hong", "Bebel", "Bernstein", "Malatesta", "Debs", "Markievicz",
+    "Connolly", "Gandhi", "Liebknecht", "Savage", "Blum", "Stauning", "Martov", "Nygaardsvold", "Trotsky", "Kerensky", "Attlee",
+    "Spiridonova", "Chifley", "Drees", "Makhno", "Nehru", "Tito", "Nagy", "Durruti", "Gerhardsen", "Van Acker", "Spaak", "Sukarno",
+    "Erlandeer", "Douglass", "Senghor", "Allende", "Van Der Lubbe", "Nkrumah", "Kreisky", "Whitlam", "Corvalan", "Mitterrand",
+    "Nasser", "Mandela", "Dubcek", "Nyerere", "Koivisto", "Manley", "Benn", "Palme", "Bhutto", "Che", "Guevara", "Gorbachev",
+    "Ismail", "Vazquez", "Sanders", "Gonzalez", "Lula", "Corbyn", "Sankara", "Marcos"]
 
 combo_names = old_place_names + god_names + mythological_place_names + symbol_names + hist_figure_names
 
@@ -350,8 +655,28 @@ def planet_namegen():
 
 print("Welcome to the Ecumenical Space Namer!")
 while test == True:
-    choice = input("What kind of name would you like? Options: Kosmano, American, Cyborg, Planet ")
-    if choice == "Kosmano" or choice == "American" or choice == "Cyborg" or choice == "Planet":
+    choice = input("""What kind of name would you like?
+        Your options are:
+        -Planet
+        -General
+        -Harmonic
+
+        -Kosmano
+        -Cyborg
+        -Mixed
+        -American
+        -Euro
+        -Russian
+        -Japanese
+        -Chinese
+        -Indian
+        -Indonesian
+        -Kazakh
+        -Kenyan
+        -Brazilian
+        -Utopian
+        """)
+    if choice == "Harmonic" or "Kosmano" or "Mixed" or "American" or "Euro" or "Russian" or "Japanese" or "Chinese" or "Indian" or "Cyborg" or "Kazakh" or "Planet" or "Utopian" or "General":
         test = False
     else:
         print("Error! Please input one of the options, making sure to capitalize the first letter only!")
@@ -366,13 +691,39 @@ while test:
         print("Error! Please input an Arabic numeral.")
 
 while number > 0:
-    if choice == "Kosmano":
+    if choice == "Harmonic":
+        harmonic_namegen()
+    elif choice == "Kosmano":
         kosmano_namegen()
+    elif choice == "Mixed":
+        mixed_namegen()
     elif choice == "American":
         american_namegen()
+    elif choice == "Euro":
+        euro_namegen()
+    elif choice == "Russian":
+        russian_namegen()
+    elif choice == "Japanese":
+        japanese_namegen()
+    elif choice == "Chinese":
+        chinese_namegen()
+    elif choice == "Indian":
+        indian_namegen()
     elif choice == "Cyborg":
         cyborg_namegen()
-    elif choice ==  "Planet":
+    elif choice == "Kazakh":
+        kazakh_namegen()
+    elif choice == "Indonesian":
+        indo_namegen()
+    elif choice == "Brazilian":
+        br_namegen()
+    elif choice == "Kenyan":
+        kenya_namegen()
+    elif choice == "Utopian":
+        utopian_namegen()
+    elif choice == "General":
+        general_namegen()
+    elif choice == "Planet":
         planet_namegen()
     number -= 1
 
