@@ -38,7 +38,7 @@ male_sax_names = ["Jay", "Lewis", "Townsend", "Newton", "Harvey", "Pollux",
     "Steadfast", "Much-Mercy", "Fear-Not", "Sorry-For-Sin", "No-Merit", "Accepted",
     "Thankful", "More-Fruit", "Faint-Not", "Purify", "Safe-Deliverance",
     "What-God-Will", "Humanity", "Faithful", "Anger", "Wroth", "Unfeigned", "Miracle",
-    "Job-Raked-Out-of-the-Ashes", "Ashes", "Called"]
+    "Job-Raked-Out-of-the-Ashes", "Ashes", "Called", "Kurt", "Torsten", "Reiner"]
 female_sax_names = ["Letitia", "Sienna", "Camellia", "Johanna", "Henrietta",
     "Rainier", "Charlotte", "Adelaide", "Emily", "Augusta", "Kestrel", "Beatrice",
     "Keziah", "Micaiah", "Delilah", "Louise", "Georgia", "Cornelia", "Helena",
@@ -69,10 +69,10 @@ female_sax_names = ["Letitia", "Sienna", "Camellia", "Johanna", "Henrietta",
     "Small-Hope", "Humiliation", "Kill-Sin", "Mortify", "Fly-Fornication",
     "Repentance", "Damaris", "Achsar", "Aphra", "Renewed", "Rejoice", "Increased",
     "Sin-Deny", "Continent", "Joy-Again", "From-Above", "Hopeful", "Faith-My-Joy",
-    "Sense", "Humility", "Clemency", "Mercy", "Truth", "Philadelphia" "Silence",
+    "Sense", "Humility", "Clemency", "Mercy", "Truth", "Philadelphia", "Silence",
     "Obedience", "Virtue", "Confidence", "Victory", "Changed", "Abuse-Not",
     "Learn-Wisdom", "Lament", "Handmaid", "My-Sake", "Remember", "Peaceable",
-    "Amity"]
+    "Amity", "Sieglinde", "Aphra"]
 
 male_lat_names = ["Oriol", "Percillier", "Zepherin", "Severin", "Remy", "Juan",
     "Martin", "Juan Martin", "Eliseo", "Cristobal", "Tomas", "Pablo", "Orphat",
@@ -107,7 +107,8 @@ male_lat_names = ["Oriol", "Percillier", "Zepherin", "Severin", "Remy", "Juan",
     "Heracles", "Hercule", "Orphee", "Orfeo", "Odiseo", "Ulises", "Ulysse", "Odysseus",
     "Virgile", "Virgilio", "Catulo", "Catulle", "Martial", "Marcial", "Alcofribas",
     "Serafin", "Apolonio", "Apollonius", "Manes", "Pitagoras", "Pythagore", "Basilide",
-    "Basilides", "Valentin", "Bardesane", "Bardesano"]
+    "Basilides", "Valentin", "Bardesane", "Bardesano", "Vasco", "Petrus", "Constantin",
+    "Aloysius"]
 female_lat_names = ["Jeliette", "Ariane", "Pilar", "Polaire", "Eliane", "Ana",
     "Sofia", "Ana Sofia", "Alivienne", "Ghislaine", "Ysabeau", "Elena", "Ofelia",
     "Albine", "Corentine", "Dominique", "Estienette", "Nicole", "Catherine",
@@ -132,7 +133,7 @@ female_lat_names = ["Jeliette", "Ariane", "Pilar", "Polaire", "Eliane", "Ana",
     "Nemesis", "Pallas", "Palas", "Palade", "Pasiphae", "Pasifae", "Psyche", "Psique",
     "Sinope", "Colombe", "Columba", "Anunciacion", "Resureccion", "Asuncion",
     "Trinidad", "Michelle", "Gabrielle", "Gabriela", "Miguela", "Claire", "Claude",
-    "Claudette"]
+    "Claudette", "Laurine", "Livie", "Aurelia", "Cornelia"]
 
 sax_surnames = ["Ahern", "Bottles", "Burke", "Desmond", "Garrick", "Koenig", "Roop",
     "Blair", "Wetter", "Byrnes", "Ermendinger", "Irving", "Lovejoy", "Meriwether",
@@ -162,14 +163,30 @@ sax_surnames = ["Ahern", "Bottles", "Burke", "Desmond", "Garrick", "Koenig", "Ro
     "Heizenbert", "Kirsch", "Muntz", "Perschky", "Pfeiffer", "Pitcher", "Potsdam",
     "Rappaport", "Rhine", "Rosenkranz", "Stoppelwald", "von Sigg", "Weiss",
     "Bryant", "Coleman", "Doyle", "Hackett", "McDermot", "O'Brien", "O'Sullivan",
-    "Tander", "Ward", "Aborn", "Beining", "Bister", "Blom", "Dult", "Eggelkam",
+    "Tander", "Ward", "Beining", "Bister", "Blom", "Dult", "Eggelkam",
     "Fromm", "Gulmedal", "Humlesnurr", "Kroken", "Langballe", "Lie", "Lunekjaer",
     "Wiltersen", "Skuggason", "Abernathy", "Cochran", "Kinkaid", "MacDonald",
     "MacDuff", "McGilliguddy", "Pringle", "Proudfoot", "Rankin", "Shanks",
     "Bolling", "Feboldson", "Sundstrom", "Kenyon", "Droelblossom", "Kampfhund",
     "Broom", "Baskerville", "Beausire", "Coffin", "Crossley", "Drake", "Drinkwater",
     "Fairchild", "French", "Heaviside", "Hooten", "Jenner", "Loveless", "Nix",
-    "Omohundro", "Passmore", "Quick", "Reddit", "Shade", "Stringfellow", "Warboys"]
+    "Omohundro", "Passmore", "Quick", "Redditt", "Shade", "Stringfellow", "Warboys",
+    "Pyrites", "Grang", "Abom", "Bruun", "Finnimann", "Gygrid", "Bindebolt", "Kist",
+    "Zwarts", "Schwarz", "Svaart", "Pittelpytt", "Dumling", "Evers", "Vilder", "Nask",
+    "Banning", "Pirrevimp", "Makkeret", "Griffing", "Hopp", "Hasblas", "Lockman", "Rommella",
+    "Knipe", "Plijster", "Pomfrit", "Krinkel", "Krengle", "Schnobbevom", "Snilehorn",
+    "Zwadderich", "Smygard", "Spire", "Stronk", "Stikling", "Zwamdrift", "Rummelfiold",
+    "Hazelaar", "Klarvang", "Korzel", "Kannewasser", "Djervell", "Kwast", "Gurgel", "Malfang",
+    "Beaglehole", "Bunny", "Cardy", "Caws", "Godolphin", "Goff", "Hender", "Liddicoat",
+    "Lower", "Maker", "Menear", "Nancarrow", "Penhollow", "Roach", "Rosewall", "Skyburrow",
+    "Tomes", "Vial", "Wills", "Brazil", "Breathnach", "Deady", "Fee", "Flood", "Geddes",
+    "Healy", "Heaven", "Lawler", "McKey", "McMorrow", "Moriarty", "Nevin", "Noonan",
+    "O'Gormley", "Kirkbride", "Power", "Rabbitte", "Seery", "Sharkey", "Talley", "Banes",
+    "Clinkscales", "Cockburn", "Forsyte", "Gall", "Greenlaw", "Hood", "Kinghorn", "Laughland",
+    "Maitland", "McBroom", "McFee", "Pennycook", "Porteous", "Reach", "Ripper", "Shankland",
+    "Smiley", "Whitelaw", "Breeze", "Cadwallader", "Conway", "Days", "Dee", "Glasscock", "Guild",
+    "Idle", "Idris", "Kidwell", "March", "Merrix", "Onions", "Penderghast", "Price", "Prothero",
+    "Saise", "Tudor", "Upjohn", "Wynne"]
 lat_surnames = ["Alvarez", "du Nuit", "Castillo", "Gutierrez de la Concha",
     "Baudet", "Fontaine", "Bonjean", "Irigoyen", "Hernandez", "Rusard", "Nicollier",
     "Montero", "Parra", "Vidal", "de Mola", "Calvo de la Puerta", "Gutierrez",
@@ -203,7 +220,10 @@ lat_surnames = ["Alvarez", "du Nuit", "Castillo", "Gutierrez de la Concha",
     "Croupton", "Ombrage", "Crochue", "Beausoleil", "Bellerue", "Bonpyjon", "Desmonts",
     "Malmaitre", "Desloups", "Bonlieu", "Bellehoux", "Voisin", "Beaugrange", "Bellefoi",
     "Bonfils", "Desfees", "Malforgeron", "Descroix", "Boncorbeau", "Bellchouette",
-    "Beaucadavre", "Boneau", "Bellbois"]
+    "Beaucadavre", "Boneau", "Bellbois", "Serdaigle", "Corvornero", "Varicosus", "Poufsouffle",
+    "Tassorosso", "Raptor", "Lumacorno", "Serpentard", "Serpeverde", "Cumana", "Jedusor",
+    "de Sardet", "d'Orsay", "de Morange", "de Vespe", "Cabral", "Janvier", "Langlois",
+    "Larousse", "Sale", "Terreur", "Terroir"]
 
 male_mix_names = male_sax_names + male_lat_names
 female_mix_names = female_sax_names + female_lat_names
@@ -237,7 +257,7 @@ def latin_name(gender):
     if rand == 1:
         lname = random.choice(lat_surnames) + " y " + random.choice(lat_surnames)
     elif rand == 2:
-        lname = random.choice(lat_surnames) + " et " + random.choice(lat_surnames)
+        lname = random.choice(lat_surnames) + " " + random.choice(lat_surnames)
     elif rand == 3:
         lname = random.choice(lat_surnames) + " " + random.choice(lat_surnames)
     else:
@@ -255,7 +275,7 @@ def mixed_name(gender):
     if rand == 1:
         lname = random.choice(mix_surnames) + " y " + random.choice(mix_surnames)
     elif rand == 2:
-        lname = random.choice(mix_surnames) + " et " + random.choice(mix_surnames)
+        lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
     elif rand == 3:
         lname = random.choice(mix_surnames) + " " + random.choice(mix_surnames)
     elif rand == 4:
@@ -323,12 +343,12 @@ while number > 0 and choice == "swathe":
     else:
         print ("Something went wrong!")
 
-    y = random.randint(1,3)
-    if y == 1:
+    y = random.randint(1,5)
+    if y == 1 or y == 2:
         saxon_name(gender)
-    elif y == 2:
+    elif y == 3 or y == 4:
         latin_name(gender)
-    elif y == 3:
+    elif y == 5:
         mixed_name(gender)
     else:
         print("Something went wrong!")
